@@ -1,0 +1,38 @@
+Enunt:
+Sa presupunem ca dezvoltam un sistem de gestionare a absolventilor. 
+Avem trei tipuri de absolventi: absolvent de liceu (HighSchoolGraduate), absolvent de universitate (UniversityGraduate) 
+si un absolvent necunoscut (NullGraduate), care reprezinta cazul in care informatiile despre absolvent nu sunt disponibile. 
+Pentru a gestiona aceste tipuri de absolventi, am implementat un design pattern numit "Null Object".
+
+Clasele sunt definite dupa cum urmeaza:
+
+1. Clasa AbstractGraduate este o clasa abstracta care defineste metodele comune pentru toti absolventii si include metode 
+   abstracte pentru verificarea daca absolventul este nul si pentru a obtine numele absolventului.
+
+2. Clasa UniversityGraduate extinde clasa AbstractGraduate si reprezinta un absolvent de universitate. 
+   Aceasta clasa implementeaza metodele abstracte definite in clasa parinte.
+
+3. Clasa HighSchoolGraduate extinde clasa AbstractGraduate si reprezinta un absolvent de liceu.
+   Aceasta clasa implementeaza metodele abstracte definite in clasa parinte.
+
+4. Clasa NullGraduate extinde clasa AbstractGraduate si reprezinta un absolvent necunoscut. 
+   Aceasta clasa implementeaza metodele abstracte definite in clasa parinte.
+
+5. Clasa NullPatternDemo este clasa principala care demonstreaza utilizarea design pattern-ului "Null Object". 
+   Ea creeaza mai multi absolventi folosind clasa GraduateFactory si afiseaza numele lor.
+
+6. Clasa GraduateFactory este o clasa de fabrica care returneaza un obiect de tipul AbstractGraduate in functie de numele dat ca argument.
+   Daca numele corespunde unui absolvent de liceu din lista predefinita, se va returna un obiect HighSchoolGraduate. 
+   Daca numele corespunde cuvantului cheie "Marius", se va returna un obiect UniversityGraduate. In caz contrar, se va returna un obiect NullGraduate.
+
+Problema:
+Dorim sa implementam un sistem de evidenta a absolventilor in cadrul unei institutii educationale. 
+Implementati design pattern-ul "Null Object" pentru a gestiona diferitele tipuri de absolventi. 
+Utilizati clasele si codurile furnizate mai sus pentru a crea aceasta implementare. 
+Asigurati-va ca clasa NullPatternDemo afiseaza corect numele absolventilor creati.
+
+Rezolvare:
+Puteti rezolva problema prin utilizarea claselor si codurilor furnizate. 
+Asigurati-va ca GraduateFactory returneaza tipurile corecte de absolventi in functie de numele dat. 
+Clasa NullPatternDemo trebuie sa afiseze numele absolventilor corect. 
+Executati clasa NullPatternDemo pentru a va asigura ca implementarea functioneaza corect.

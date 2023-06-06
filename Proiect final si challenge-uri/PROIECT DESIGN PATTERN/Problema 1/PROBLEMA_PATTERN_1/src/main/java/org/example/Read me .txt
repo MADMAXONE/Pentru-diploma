@@ -1,0 +1,12 @@
+Problema:
+Sa presupunem ca avem o aplicatie care gestioneaza o lista de varste ale utilizatorilor si avem nevoie sa parcurgem aceasta lista si sa afisam fiecare varsta in parte.
+Implementeaza design pattern-ul Iterator pentru a permite parcurgerea listei de varste si afisarea acestora.
+
+Cerinte:
+
+1. Implementeaza interfața Iterator pentru a defini metodele hasNext() si next(), care permit parcurgerea elementelor.
+2. Implementeaza interfata Container pentru a defini metoda getIterator(), care returneaza un obiect de tipul Iterator.
+3. Implementeaza clasa AgeHandler care implementeaza interfata Container si contine un array de varste.
+4. In clasa AgeHandler, defineste o clasa interna AgeIterator care implementeaza interfata Iterator si permite parcurgerea array-ului de varste.
+5. In clasa IteratorPatternDemo, instantiaza obiectul AgeHandler si obtine un obiect Iterator folosind metoda getIterator().
+6. Utilizeaza un loop pentru a parcurge elementele din Iterator si afiseaza fiecare varsta in parte.
